@@ -1,0 +1,94 @@
+\documentclass{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[]{hyperref}
+\usepackage{graphicx, float}
+\usepackage{subfig}
+\usepackage{amssymb, amsmath, amsthm, stmaryrd}
+
+%%%%%%%%%%%%%%%% Lengths %%%%%%%%%%%%%%%%
+\setlength{\textwidth}{15.5cm}
+\setlength{\evensidemargin}{0.5cm}
+\setlength{\oddsidemargin}{0.5cm}
+
+%%%%%%%%%%%%%%%% Variables %%%%%%%%%%%%%%%%
+\def\projet{5}
+\def\titre{Interpolation and Integration Methods}
+\def\groupe{4}
+\def\equipe{3}
+\def\responsible{}
+\def\secretary{}
+\def\others{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%% Header %%%%%%%%%%%%%%%%
+\begin{titlepage}
+	\begin{center}
+		\vspace*{1cm}
+		\begin{figure}[htbp]
+			%\centerline{\includegraphics[scale=0.5]{res/school-logo.jpg}}
+		\end{figure}
+
+		\vspace*{1.5cm}
+		\rule{\linewidth}{1mm}\newline
+		
+		\textbf{\huge{Computer Science Project (n°5)}}
+ 
+		\vspace{0.4cm}
+		\LARGE{Interpolation and Integration Methods}
+		\rule{\linewidth}{1mm}
+		\vspace{0.1cm}
+
+		\Large
+		\textbf{Group \groupe, Team \equipe}\\
+		\vspace{0.5cm}
+		\Large
+		\begin{center}
+			\begin{tabular}{|c|c|}
+				\hline
+				\textbf{Leader} \\
+				\hline
+				\textbf{Secretary}  \\
+				\hline
+				\textbf{Programmers} \\
+				\hline
+			\end{tabular}
+		\end{center}
+		
+		\begin{center}
+			\begin{tabular}{|c|c|}
+				\hline
+				\textbf{Supervisor} & Dr. X \\
+				\hline
+				\textbf{Editor} & Dr. Y \\
+				\hline
+			\end{tabular}
+		\end{center}
+		\vspace{0.7cm}
+ 
+		\vfill
+		Computer Science\\
+		School X\\
+		2022-2023 
+	\end{center}
+\end{titlepage}
+
+%%%%%%%%%%%%%%%% Main part %%%%%%%%%%%%%%%%
+
+% Notes
+% State that we used this airfoil maybe ?
+% https://m-selig.ae.illinois.edu/ads/afplots/goe05k.gif
+
+\tableofcontents
+
+\include{sections/introduction}
+
+\input{sections/section-1}\label{sec1}
+
+\input{sections/section-2}\label{sec2}
+
+\input{sections/section-3}\label{sec3}
+
+\end{document}
